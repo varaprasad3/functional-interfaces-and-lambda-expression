@@ -1,8 +1,8 @@
 # functional-interfaces-and-lambda-expression
 
-==> I have created employee and user class in com.wissen.day3task.model package.
+==> I have created Employee and User class in com.wissen.day3task.model package.
 
-==> I have created usernamegenerator functional interface to generate username and implemented consumer interface to print employees details in com.wissen.day3task.functionalinterfaces package.
+==> I have created UserNameGenerator functional interface to generate username and implemented consumer interface to print employees details in com.wissen.day3task.functionalinterfaces package.
 
 ==> The execution starts from the classes which are created under com.wissen.day3task.controllers package.
 
