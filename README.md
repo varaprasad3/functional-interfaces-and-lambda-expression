@@ -11,8 +11,13 @@
 ==> PrintEmployeeDetailsUsingConsumer class under com.wissen.day3task.controllers package is used to print the employee details.
 
 ==> UserAndEmployeeDriver class under com.wissen.day3task.controllers package has many functionalities listed below:-
+
 a. i have created a supplier to get 16 digit random passwod
+
 b. Implemented usernamegenerator to generate random username.
+
 c. Sorted all the employee details based on the month of their date of birth.
+
 d. created list of users from list of employees
+
 e. created two threads, the first thread will print the details of employees and the second thread will print the details of users.
