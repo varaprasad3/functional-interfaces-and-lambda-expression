@@ -9,7 +9,7 @@ public class CheckEmployeeSalaryUsingPredicate {
     public static void main(String[] args) {
 		Predicate<Employee> pr = (e)-> e.getSalary()>2000 ;
 		
-		Employee e = new Employee(2,"vara","prasad", LocalDate.parse("2000-09-20") , 10000);
+		Employee e = new Employee(2,"vara","prasad", LocalDate.parse("2000-09-20") , 10000,LocalDate.parse("2023-02-01"),"hr");
 		
 		System.out.println(pr.test(e));
 	}

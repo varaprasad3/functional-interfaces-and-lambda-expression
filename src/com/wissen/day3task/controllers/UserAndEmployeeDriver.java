@@ -30,19 +30,18 @@ public class UserAndEmployeeDriver {
 			return sb.toString();
 		};
 
-		// implementing UserNameGenerator functional interface to generate random
-		// username.
+		// implementing UserNameGenerator functional interface to generate random username.
 		UserNameGenerator nameGenerator = (firstName, lastName, dateOfBirth, id) -> {
 			return firstName + lastName + dateOfBirth + id;
 		};
 
-		List<Employee> employees = new ArrayList<Employee>();
-		employees.add(new Employee(1, "Anand", "dev", LocalDate.parse("2000-08-20"), 1000));
-		employees.add(new Employee(2, "DayAnand", "dev", LocalDate.parse("2000-09-20"), 1000));
-		employees.add(new Employee(3, "VirAnand", "dev", LocalDate.parse("2000-01-20"), 1000));
-		employees.add(new Employee(4, "MajaAnand", "dev", LocalDate.parse("2000-06-20"), 1000));
-		employees.add(new Employee(5, "MasterAnand", "dev", LocalDate.parse("2000-02-20"), 1000));
-
+		List<Employee> employees = new ArrayList<Employee>() ;
+		employees.add(new Employee(1,"Anand","dev",LocalDate.parse("2000-08-20"),1000,LocalDate.parse("2022-02-01"), "hr")) ;
+		employees.add(new Employee(2,"DayAnand","dev",LocalDate.parse("2000-08-20"),1000,LocalDate.parse("2023-02-01"),"software") );
+		employees.add(new Employee(3,"VirAnand","dev",LocalDate.parse("2000-08-20"),1000,LocalDate.parse("2023-01-01"), "hardware") );
+		employees.add(new Employee(4,"MajaAnand","dev",LocalDate.parse("2000-08-20"),1000,LocalDate.parse("2024-02-01"),"hr")) ;
+		employees.add(new Employee(5,"MasterAnand","dev",LocalDate.parse("2000-08-20"),1000,LocalDate.parse("2024-02-01"),"hardware")) ;
+		
 		// sorting employees based on month
 		Collections.sort(employees, new Comparator<Employee>() {
 
